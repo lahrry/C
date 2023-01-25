@@ -1,0 +1,143 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset129 AppleSDGothicNeo-Regular;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 (1)\
+
+\f1 \'b3\'bb\'b0\'a1
+\f0  
+\f1 \'c1\'f6\'c1\'a4\'c7\'d1
+\f0  
+\f1 \'bc\'fd\'c0\'da\'b1\'ee\'c1\'f6
+\f0  
+\f1 \'c7\'d5 \'b1\'b8\'c7\'cf\'b4\'c2 \'b9\'e6\'b9\'fd. \'c1\'f5\'b0\'a8 +3\
+\
+
+\f0 #include <stdio.h>\
+\
+int main(void)\{\
+  int sum = 0;\
+  int num; //
+\f1 \'bb\'e7\'bf\'eb\'c0\'da\'b0\'a1
+\f0  
+\f1 \'c0\'d4\'b7\'c2\'c7\'cf\'b4\'c2
+\f0  
+\f1 \'b0\'aa\'c0\'bb
+\f0  
+\f1 \'c0\'fa\'c0\'e5\'c7\'cf\'b4\'c2
+\f0  
+\f1 \'ba\'af\'bc\'f6
+\f0 \
+\
+  printf("
+\f1 \'b0\'aa\'c0\'bb
+\f0  
+\f1 \'c0\'d4\'b7\'c2\'c7\'d8
+\f0  
+\f1 \'c1\'d6\'bc\'bc\'bf\'e4
+\f0 : ");\
+  scanf("%d", &num);//
+\f1 \'b9\'dd\'ba\'b9\'b9\'ae\'c0\'c7
+\f0  
+\f1 \'c1\'b6\'b0\'c7
+\f0 (
+\f1 \'b3\'a1\'b0\'aa
+\f0 )
+\f1 \'b0\'aa\'c0\'cc
+\f0  
+\f1 \'b5\'c8\'b4\'d9
+\f0 \
+\
+  for(int i=1; i<=num; i+=3)\{\
+    sum = sum + i;\
+  \}\
+\
+  printf("1
+\f1 \'ba\'ce\'c5\'cd
+\f0  %d
+\f1 \'b1\'ee\'c1\'f6\'c0\'c7
+\f0  
+\f1 \'c7\'d5\'c0\'ba
+\f0  : %d\\n", num, sum);\
+  return 0;\
+\}\
+\
+(2)\
+\
+
+\f1 \'b9\'ae\'c1\'a6
+\f0 : scanf()
+\f1 \'c0\'bb
+\f0  
+\f1 \'c0\'cc\'bf\'eb\'c7\'cf\'bf\'a9
+\f0  
+\f1 \'bb\'e7\'bf\'eb\'c0\'da\'b0\'a1 \'bf\'f8\'c7\'cf\'b4\'c2 \'b1\'b8\'b1\'b8\'b4\'dc\'c0\'bb \'c0\'d4\'b7\'c2\'c7\'d1\'b4\'d9. \'b1\'d7\'b8\'ae\'b0\'ed \'b3\'aa\'bc\'ad \'b1\'b8\'b1\'b8\'b4\'dc\'c0\'bb \'c3\'e2\'b7\'c2\'c7\'cf\'b4\'c2 \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a5\'c0\'bb \'c0\'db\'bc\'ba\
+Ex) \'bf\'f8\'c7\'cf\'b4\'c2 \'b1\'b8\'b1\'b8\'b4\'dc\'c0\'bb \'c0\'d4\'b7\'c2\'c7\'d8\'c1\'d6\'bc\'bc\'bf\'e4: 4\
+4*1 =4\
+4*2= 8\
+\'a1\'a6\
+4*9= 36\
+\
+<\'b3\'aa\'c0\'c7 \'b9\'e6\'bd\'c4> \
+#include<stdio.h>\
+\
+int main(void)\{\
+  int num = 0;\
+  int mynum = 0;\
+\
+  printf("\'bf\'f8\'c7\'cf\'b4\'c2 \'b1\'b8\'b1\'b8\'b4\'dc\'c0\'bb \'c0\'d4\'b7\'c2\'c7\'d8\'c1\'d6\'bc\'bc\'bf\'e4: ");\
+  scanf("%d", &mynum); \
+\
+  for(int num=1; num<=9; num++)\{\
+    printf("%d*%d=%d\\n", mynum, num, num*mynum);\
+  \}\
+  return 0;\
+\}\
+\
+<\'b0\'ad\'bb\'e7\'b4\'d4 \'b9\'e6\'bd\'c4>\
+#include<stdio.h>\
+\
+int main(void)\{\
+  int gugudan;\
+\
+  printf("\'bf\'f8\'c7\'cf\'b4\'c2 \'b1\'b8\'b1\'b8\'b4\'dc\'c0\'ba: ");\
+  scanf("%d", &gugudan);\
+\
+  for(int i=1; i<=9; i++)\{\
+    printf("%d X %d = %2d\\n", gugudan, i, gugudan * i); //%2d \'b7\'ce\'c7\'cf\'b8\'e9 2\'c4\'ad\'c0\'b8\'b7\'ce \'b8\'c2\'c3\'e7\'c1\'fc\
+  \}\
+  return 0;\
+\}\
+\
+(3)\
+\'c1\'df\'c3\'b8 for \'b9\'ae\
+#include<stdio.h>\
+\
+int main(void)\{\
+\
+  for(int i=2; i<=9; i++)\{\
+    for(int j=1; j<=9; j++)\{\
+      printf("%d*%d=%2d\\n",i,j,i*j);\
+    \}\
+    printf("\\n");\
+  \}\
+  return 0;\
+\}\
+\
+(4) while \'b9\'ae \'b1\'d7\'b8\'ae\'b0\'ed for\'b9\'ae\'b0\'fa \'ba\'f1\'b1\'b3\
+#include<stdio.h>\
+\
+int main(void)\{\
+  //for(int i=0; i<5; i++)\
+  int i = 0;//while\'b1\'b8\'b9\'ae\'c0\'c7 \'c3\'ca\'b1\'e2\'b0\'aa\
+  while(i<5)\{//\'c1\'b6\'b0\'c7\'b9\'ae\
+    printf("C-Programming\\n");\
+    i++; //\'c1\'f5\'b0\'a1\'b0\'aa\
+  \}\
+  return 0;\
+\}\
+\
+}
